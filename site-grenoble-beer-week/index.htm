@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="utf-8"></meta>
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <title>Grenoble Beer Week - Une Petite Mousse</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="favicon.ico" />
+    <style type="text/css">
+      @font-face {
+        font-family: 'bebaskai';
+        src: url('fonts/bebaskai.eot'); /* IE9 Compat Modes */
+        src: url('fonts/bebaskai.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('fonts/bebaskai.woff') format('woff'), /* Modern Browsers */
+             url('fonts/bebaskai.ttf')  format('truetype'), /* Safari, Android, iOS */
+             url('fonts/bebaskai.svg#svgFontName') format('svg'); /* Legacy iOS */
+      }
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+      html{
+        font-size : 18px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+
+      }
+
+      h1,h2,h3,h4,h5{
+        font-family: 'bebaskai';
+
+      }
+
+      nav ul a{
+        font-size: 14px;
+      }
+
+      .brand-logo{
+        margin-top: 5px;
+      }
+
+      .button-collapse{
+        color: #f57f17;
+      }
+
+      .collapsible-header:hover{
+        color: #f57f17;
+      }
+      
+      .carousel-item h3{
+        margin-top: 25px;
+      }
+      .container h2{
+        margin-top: 50px;
+      }
+
+      .clickable{
+        cursor : pointer;
+      }
+
+      .clickable a:hover{
+        color : #fff;
+      }
+
+      blockquote{
+        border-left: 5px solid #f57f17 !important;
+        font-style: italic;
+        font-size: 1.1em;
+      }
+
+      .emphase{
+        color: #f57f17;
+      }
+
+      .chip a{
+        color : #ddd;
+      }
+
+      a .emphase{
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Content goes here-->
+      <nav class="white valign-wrapper">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo center"><img src="img/logo-grenoble-beer-week-2017-xs.png" height="100px"></a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down grey-text">
+              <li><a href="#qui-sommes-nous" class="grey-text text-darken-2">Qui Sommes Nous ?</a></li>
+              <li><a href="#programme" class="grey-text text-darken-2">Programme</a></li>
+              <li><a href="#bars-brasseries" class="grey-text text-darken-2">Bars &amp; Brasseries</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#concours-brassage-amateur" class="grey-text text-darken-2"><span class="emphase">Concours de Brassage Amateur</span></a></li>
+              <li><a href="#infos-pratiques" class="grey-text text-darken-2">Infos pratiques</a></li>
+              <li><a href="#" class="waves-effect yellow darken-4 waves-light btn pulse">JE RESERVE</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-nav">
+             
+              <li><a href="#qui-sommes-nous" class="grey-text text-darken-2">Qui Sommes Nous ?</a></li>
+              <li><a href="#programme" class="grey-text text-darken-2">Programme</a></li>
+              <li><a href="#bars-brasseries" class="grey-text text-darken-2">Bars &amp; Brasseries</a></li>
+              <li><a href="#infos-pratiques" class="grey-text text-darken-2">Infos pratiques</a></li>
+              <li><a href="#" class="waves-effect yellow darken-4 waves-light btn">JE RESERVE</a></li>
+               <li><a href="#" class="brand-logo"><img src="img/logo-grenoble-beer-week-2017-xs.png" height="100px"></a></li>
+            </ul>
+          </div>
+        </div>  
+      </nav>
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/grenoble-beer-week-illustration.jpg"></div>
+      </div>
+      <!--Start qui sommes nous-->
+      <div class="container section">
+        <div class="row valign-wrapper scrollspy" id="qui-sommes-nous">
+          <div class="col m12" >
+            <h2 class="yellow-text text-darken-4 center-align">Qui sommes nous ?</h2>
+            <h5>Une Petite Mousse</h5>
+            <blockquote>
+              Une brasserie artisanale grenobloise forte d’une communauté de 60 000 membres qui laisse libre cours à ses envies houblonnées les plus audacieuses.
+            </blockquote>
+            <h5>Grenoble Beer Week</h5>
+            <blockquote>
+              L’envie de donner un nouveau festival à la bière artisanale sur le territoire grenoblois, pour mettre en lumière tous ceux qui font la bière dans la “Cuvette”.
+            </blockquote>
+            <p>&nbsp;</p>
+          <div class="col s12 center-align scrollspy" id="programme">
+            <img class="responsive-img circle" width="300px" src="img/logo-grenoble-beer-week.png">
+          </div>  
+          </div>  
+        </div>
+        
+        <div class="row">
+          <div class="col m12 s12">
+          <h2 class="center-align scrollspy yellow-text text-darken-4">Programme</h2>
+          <p>&nbsp;</p>
+            <ul class="collapsible" id="collapsible-jeudi" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header center-align"><h5><span class="emphase">Jeudi 21 Septembre</span> : la Dégustation</h5></div>
+                  <div class="collapsible-body">
+                    <p>Comme une mise en bouche, participez à la dégustation des bières finalistes du <a href="#concours-brassage-amateur"><strong class="emphase">concours de brassage amateur de la Grenoble Beer Week</strong></a> ! Goûtez à l’aveugle aux créations d’amateurs passionnés et élisez votre bière préférée en compagnie d’un jury de biérologues prestigieux.</p>
+                    <p><strong class="emphase">10€ l’entrée (places limitées) :</strong> dégustation gratuite des bières participantes (5cl) et buffet de mignardises en accord mets et bières.</p>
+                  </div>
+                </li>
+            </ul>
+            <ul class="collapsible" id="collapsible-vendredi" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header center-align"><h5><span class="emphase">Vendredi 22 Septembre</span> : la Déambulation</h5></div>
+                <div class="collapsible-body">
+                  
+                  <ul>
+                    <li><strong class="emphase">Horaires : de 18h à 22h</strong></li>
+                  </ul>
+                  <p>Grâce à notre carte interactive, baladez-vous dans votre quartier ou à l’autre bout de la ville et partez à la rencontre des bars, caves, brasseries et restaurants qui vous ouvrent leurs portes pour célébrer la bière ! Mise en perce de nouvelles bières, rencontre avec les brasseurs, dégustation guidée… De 18h à 22h, Grenoble fourmillera de happening autour de notre boisson préférée.</p>
+                  <div class="row">
+                    <div class="col m6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2814.139593464805!2d5.687920915834076!3d45.14376856278765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af4cde7de8a31%3A0xa69e5137ff578c08!2sUne+Petite+Mousse!5e0!3m2!1sfr!2sfr!4v1498640213006" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                    <div class="col m6"><!--<img class="responsive-img" height="300px" src="img/logo-grenoble-beer-week.png">--></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="collapsible" id="collapsible-samedi" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header center-align"><h5><span class="emphase">Samedi 23 Septembre</span> : le Final</h5></div>
+                
+                <div class="collapsible-body">
+                  <p>Réunir, sur l’Esplanade de Grenoble, à l’ombre des chapiteaux, une vingtaine de brasseries artisanales. Venues des quais de l’Isère, de la Chartreuse, des Alpes et même de Suisse, elles représentent l’essence des nouvelles brasseries indépendantes de la région. Muni-e de votre verre de dégustation, qui vous sera remis à l’entrée du grand final, déambulez entre les tireuses et goûtez aux dernières créations de ces maîtres brasseurs.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--End qui sommes nous -->
+
+      <div class="parallax-container hide-on-small-only">
+        <div class="parallax"><img class="responsive-img" src="img/grenoble-beer-week-vue-d-ensemble.jpg"></div>
+      </div>
+      <div class="parallax-container hide-on-med-and-up">
+        <div class="parallax"><img src="img/grenoble-beer-week-vue-d-ensemble.jpg"></div>
+      </div>
+      <!--Start brasserie bars bieres-->
+      <div class="container section">
+        <div class="row" id="bars-brasseries">
+          <h2 class="center-align yellow-text text-darken-4">Bars - Brasseries - Caves</h2>
+          <div class="col s12">
+            
+            <p>Ils la brassent, ils la vendent, ils la mettent en valeur, ils vous la conseillent : ces bars, brasseries et caves sont autant de passionnés qui n’ont qu’une hâte, partager avec vous leur amour de la bière bien faite.</p>
+            <p>&nbsp;</p>
+            <p><p>Encore un peu de patience, <span class="emphase">la liste des bars, brasseries et caves participants vous sera bientôt révélée ;)</span></p></p>
+          </div>
+        </div>
+        <!--Uncomment bellow when breweries unveiled-->
+          <!--
+        <div class="row hide-on-small-only">
+          <h3>Les brasseries :</h3>
+          
+            <div class="col m4 s12">
+              <div class="collection">
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 0);" class="collection-item avatar"><img src="https://www.happybeertime.com/wp-content/uploads/2015/12/Mandrin-325x325.jpg" class="circle"><span class="title yellow-text text-darken-4">Brasserie du Dauphiné</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 1);" class="collection-item avatar"><img src="http://tourisme-bievrevalloire.com/wp-content/uploads/noesit/medias/815057/binche-brasserie-de-chambaran.jpg" class="circle"><span class="title yellow-text text-darken-4">Chambaran</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 2);" class="collection-item avatar"><img src="http://www.biere-france.com/brasseries/diaporamas/g241.jpg" class="circle"><span class="title yellow-text text-darken-4">Cuves de Sassenage</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 3);" class="collection-item avatar"><img src="https://www.utmc.fr/wp-content/uploads/2017/03/lamanivelle.jpg" class="circle"><span class="title yellow-text text-darken-4">Die la Manivelle</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 4);" class="collection-item avatar"><img src="http://france-tastes.com/wp-content/uploads/2016/05/distrikt.jpg" class="circle"><span class="title yellow-text text-darken-4">Distrikt</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 5);" class="collection-item avatar"><img src="http://biere-galibier.com/images/foot-logo.png" class="circle"><span class="title yellow-text text-darken-4">Galibier</span></a>
+              </div>
+            </div>
+            <div class="col m4 s12">
+              <div class="collection">
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 6);" class="collection-item avatar"><img src="https://s3.eu-central-1.amazonaws.com/files.easycrowd.net/images/files/000/003/641/tinymce/logobonnefabrique.png?1450388498" class="circle"><span class="title yellow-text text-darken-4">La Bonne Fabrique</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 7);" class="collection-item avatar"><img src="http://www.bierestory.fr/media/reviews/photos/original/55/6f/4d/BrasserieLaFrivole-22-1377951873.jpg" class="circle"><span class="title yellow-text text-darken-4">la Frivole</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 8);" class="collection-item avatar"><img src="img/logo-brasserie-la-furieuse.png" class="circle"><span class="title yellow-text text-darken-4">la Furieuse</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 9);" class="collection-item avatar"><img src="https://pbs.twimg.com/profile_images/795604137287319553/FdPFFIdc.jpg" class="circle"><span class="title yellow-text text-darken-4">Lishman</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 10);" class="collection-item avatar"><img src="http://www.maltey.fr/Images/Vitrine/Vitrine_2.png" class="circle"><span class="title yellow-text text-darken-4">Maltey</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 11);" class="collection-item avatar"><img src="http://www.brasseriedumontaiguille.fr/$pic/Logo/Brasserie_MontAiguille_Uncolored.png" class="circle"><span class="title yellow-text text-darken-4">Mont Aiguille</span></a>
+              </div>
+            </div>
+            <div class="col m4 s12">
+              <div class="collection">
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 12);" class="collection-item avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuvGMmiRjInbpWFFNzJkvB9W-OPuwH9bInkJyDPcHDnx5gRqCI" class="circle"><span class="title yellow-text text-darken-4">Ninkasi</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 13);" class="collection-item avatar"><img src="" class="circle"><span class="title yellow-text text-darken-4">Pied de Nez</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 14);" class="collection-item avatar"><img src="img/logo-brasserie-soltice.jpg" class="circle"><span class="title yellow-text text-darken-4">Solstice</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 15);" class="collection-item avatar"><img src="https://www.brasserie-du-triangle-dor.com/s/misc/logo.png?t=1493587636" class="circle"><span class="title yellow-text text-darken-4">Triangle d’Or</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 16);" class="collection-item avatar"><img src="img/logo-une-petite-mousse-la-brasserie.png" class="circle"><span class="title yellow-text text-darken-4">Une Petite Mousse</span></a>
+                <a href="#brasseries" onclick="$('.carousel').carousel('set', 17);" class="collection-item avatar"><img src="http://brasserie-verticale.beer/wp-content/uploads/2016/03/LOGO-BRASSERIE-VERTICALE-480x300.jpg" class="circle"><span class="title yellow-text text-darken-4">Vertic’Ale</span></a>
+
+              </div>
+            </div>-->
+          </div>
+          <!--
+        <div class="row hide-on-small-only">
+          <h3>Les bars :</h3>
+            <div class="col m4 s12">
+              <div class="collection">
+                <a href="#bars" onclick="$('.carousel').carousel('set', 0);" class="collection-item yellow-text text-darken-4">Le Zimmerman</a>
+                <a href="#bars" onclick="$('.carousel').carousel('set', 1);" class="collection-item yellow-text text-darken-4">Bar 2</a>
+                <a href="#bars" onclick="$('.carousel').carousel('set', 2);" class="collection-item yellow-text text-darken-4">Bar 3</a>
+                <a href="#bars" onclick="$('.carousel').carousel('set', 3);" class="collection-item yellow-text text-darken-4">Bar 4</a>
+              </div>
+            </div>
+            <div class="col m4 s12">
+              <div class="collection">
+                <a href="#bars" onclick="$('.carousel').carousel('set', 4);" class="collection-item yellow-text text-darken-4">Bar 5</a>
+                <a href="#bars" onclick="$('.carousel').carousel('set', 5);" class="collection-item yellow-text text-darken-4">Bar 6</a>
+                <a href="#bars" onclick="$('.carousel').carousel('set', 6);" class="collection-item yellow-text text-darken-4">Bar 7</a>
+                <a href="#bars" onclick="$('.carousel').carousel('set', 7);" class="collection-item yellow-text text-darken-4">Bar 8</a>
+              </div>
+            </div>
+            <div class="col m4 s12">
+              <div class="collection">
+                <a href="#bars" onclick="$('.carousel').carousel('set', 8);" class="collection-item yellow-text text-darken-4">Bar 9</a>
+                <a href="#bars" onclick="$('.carousel').carousel('set', 9);" class="collection-item yellow-text text-darken-4">Bar 10</a>
+                <a href="#bars" onclick="$('.carousel').carousel('set', 10);" class="collection-item yellow-text text-darken-4">Bar 11</a>
+                <a href="#bars" onclick="$('.carousel').carousel('set', 11);" class="collection-item yellow-text text-darken-4">Bar 12</a>
+              </div>
+            </div>
+        </div>-->
+
+        <!--For MOBILE ONLY-->
+        <div class="row hide-on-med-and-up">
+          <h3>Les brasseries :</h3>
+          <p>Encore un peu de patience, <span class="emphase">la liste des brasseries participantes vous sera bientôt révélée ;)</span></p>
+          <!--Uncomment bellow when breweries unveiled-->
+          <!--
+          <ul class="collapsible" data-collapsible="accordion">
+             <li>
+               <div class="collapsible-header">Brasserie du Dauphiné</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Chambaran</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Cuves de Sassenage</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Die la Manivelle</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Distrikt</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Galibier</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">La Bonne Fabrique</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">la Frivole</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">la Furieuse</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Lishman</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Maltey</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Mont Aiguille</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Ninkasi</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Pied de Nez</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Solstice</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Triangle d’Or</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Une Petite Mousse</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+             <li>
+               <div class="collapsible-header">Vertic’Ale</div>
+               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+             </li>
+          </ul>-->
+        </div>
+        <!--End MOBILE ONLY-->
+
+      </div>
+      <!--End brasserie bars bieres -->
+      <!--Modals Brasserie-->
+      <div class="modal" id="brasseries">
+          <div class="modal-content">
+            <div class="carousel carousel-slider center" data-indicators="true">
+              <!--<div class="carousel-fixed-item center">
+                <a class="btn waves-effect white grey-text darken-text-2">button</a>
+              </div>-->
+              <div class="carousel-item black white-text" href="#one!">
+                <h3>Une Petite Mousse - La Brasserie</h3>
+                <div class="row">
+                  <div class="col m4">
+                    <img class="responsive-img" src="img/logo-une-petite-mousse-la-brasserie.png">
+                  </div>
+                  <div class="col m8 left-align">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nulla a iaculis commodo. Nam eget arcu tempus, imperdiet magna a, molestie mauris. Ut sollicitudin aliquet augue, id fermentum diam consectetur in. Morbi ut mi sit amet magna mollis varius nec eget tellus. Curabitur commodo nunc at metus iaculis malesuada. Ut ut porttitor risus. Sed pharetra, sapien tempus suscipit suscipit, odio risus lobortis ante, ac euismod elit justo vitae nibh. Vivamus maximus egestas risus.</p>
+                    <h5>Où la retrouver ?</h5>
+                    <div class="chip clickable yellow darken-4 zimmerman"><a href="#bars">Le Vendredi : Bar Le Zimmerman</a></div>
+                    <div class="chip clickable yellow darken-4">Le Samedi : L'Esplanade</div>
+                  </div>
+                </div>
+              
+              </div>
+              <div class="carousel-item amber white-text" href="#two!">
+                <h2>Brasserie 2</h2>
+                <p class="white-text">This is your second panel</p>
+              </div>
+              <div class="carousel-item green white-text" href="#three!">
+                <h2>Brasserie 3</h2>
+                <p class="white-text">This is your third panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#four!">
+                <h2>Brasserie 4</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#five!">
+                <h2>Brasserie 6</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#six!">
+                <h2>Brasserie 7</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#seven!">
+                <h2>Brasserie 8</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#eight!">
+                <h2>Brasserie 9</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#nine!">
+                <h2>Brasserie 10</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#ten!">
+                <h2>Brasserie 11</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#eleven!">
+                <h2>Brasserie 12</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#twelve!">
+                <h2>Brasserie 13</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#thirteen!">
+                <h2>Brasserie 14</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#fourteen!">
+                <h2>Brasserie 15</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <!--<div class="carousel-item blue white-text" href="#ten!">
+                <h2>Brasserie 16</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#ten!">
+                <h2>Brasserie 17</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#ten!">
+                <h2>Brasserie 11</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>-->
+            </div>
+            <div class="left">
+              <a class="btn waves-effect white grey-text darken-text-2" onclick="moveBackward();"><i class="material-icons left">fast_rewind</i> Brasserie précédente</a>
+            </div>
+            <div class="right">
+              <a class="btn waves-effect white grey-text darken-text-2" onclick="moveForward();"><i class="material-icons right">fast_forward</i>Brasserie suivante</a>
+            </div>
+          </div>
+      </div>  
+      <!-- Fin Modal Brasserie --> 
+      <!--Modals Bars-->
+      <div class="modal" id="bars">
+          <div class="modal-content">
+            <div class="carousel carousel-slider center" data-indicators="true">
+              <!--<div class="carousel-fixed-item center">
+                <a class="btn waves-effect white grey-text darken-text-2">button</a>
+              </div>-->
+              <div class="carousel-item black white-text valign-wrapper" href="#one!">
+                <h3>Le Zimmerman</h3>
+                <div class="row">
+                  <div class="col m4">
+                    <img class="responsive-img" src="https://i2.wp.com/lesmondaines.com/wp-content/uploads/2017/04/DSC02873.jpg">
+                  </div>
+                  <div class="col m8 left-align">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nulla a iaculis commodo. Nam eget arcu tempus, imperdiet magna a, molestie mauris. Ut sollicitudin aliquet augue, id fermentum diam consectetur in. Morbi ut mi sit amet magna mollis varius nec eget tellus. Curabitur commodo nunc at metus iaculis malesuada. Ut ut porttitor risus. Sed pharetra, sapien tempus suscipit suscipit, odio risus lobortis ante, ac euismod elit justo vitae nibh. Vivamus maximus egestas risus.</p>
+                    
+                  </div>
+                </div>
+              
+              </div>
+              <div class="carousel-item amber white-text" href="#two!">
+                <h2>Bar 2</h2>
+                <p class="white-text">This is your second panel</p>
+              </div>
+              <div class="carousel-item green white-text" href="#three!">
+                <h2>Bar 3</h2>
+                <p class="white-text">This is your third panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#four!">
+                <h2>Bar 4</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#five!">
+                <h2>Bar 5</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#six!">
+                <h2>Bar 6</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#seven!">
+                <h2>Bar 7</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#eight!">
+                <h2>Bar 8</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#nine!">
+                <h2>Bar 4</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+            </div>
+            <div class="left">
+              <a class="btn waves-effect white grey-text darken-text-2" onclick="moveBackward();"><i class="material-icons left">fast_rewind</i> Bar précédent</a>
+            </div>
+            <div class="right">
+              <a class="btn waves-effect white grey-text darken-text-2" onclick="moveForward();"><i class="material-icons right">fast_forward</i>Bar suivant</a>
+            </div>
+          </div>   
+      </div>  
+      <!-- Fin Modal Bars --> 
+      
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/grenoble-beer-week-pintes.jpg"></div>
+      </div>
+
+      <div class="container scrollspy" id="infos-pratiques">
+        <div class="row">
+          <h2 class="center-align yellow-text text-darken-4">Infos pratiques</h2>
+          <div class="col m7">
+            <div class="card-panel grey darken-2 white-text scrollspy" id="concours-brassage-amateur">
+              <h4>Concours de brassage Amateur</h4>
+              <p>Tout grand brasseur a débuté chez lui, dans sa baignoire, avec ses recettes prototypes. La Grenoble Beer Week rend hommage aux brasseurs amateurs de tous horizons en leur proposant un concours, qui permettra aux gagnants de <span class="emphase">brasser leur recette dans une brasserie professionnelle et de créer la bière officielle de la Grenoble Beer Week #2 ! </span><br>Envie de participer ?</p>
+              <a href="https://unepetitemousse.fr/images/prod/ebook/GBW2017-reglement-brassage-amateur.pdf" class="btn waves-light waves-effect yellow darken-4">Je télécharge le règlement</a>
+            </div>
+          </div>
+          <div class="col m5">
+            <div class="card-panel yellow darken-4 white-text">
+              <h4>Contacts &amp; Tarifs</h4>
+              <ul>
+                <li><strong>Tarifs : </strong>9€ l’entrée sur place, avec un verre de dégustation + 1 conso offerte</li>
+                <li><strong data-type="phone"><i class="tiny material-icons">phone</i> 0420880036</strong></li>
+                <li><strong><i class="tiny material-icons">email</i> grenoblebeerweek@unepetitemousse.fr</strong></li>
+                <li>&nbsp;</li>
+                <li>Envie de vous investir ?</li>
+              <a href="#" class="btn waves-light waves-effect grey darken-2">Je veux être bénévole</a>
+            </div>
+          </div>
+          
+        </div>
+
+        </div>
+
+      </div>
+      <footer class="page-footer grey darken-4 white-text">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Grenoble Beer Week</h5>
+              <p class="grey-text text-lighten-4">La première édition de la Grenoble Beer Week aura lieu du Jeudi 21 Septembre 2017 au Samedi 23 Septembre 2017.</p>
+              <ul>
+                <li><i class="tiny material-icons">phone</i> Nous parler :  0420880036</li>
+                <li><i class="tiny material-icons">email</i> Nous écrire : grenoblebeerweek@unepetitemousse.fr</li>
+              </ul>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Plan du Site</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="index.htm#qui-sommes-nous">Qui sommes nous ?</a></li>
+                <li><a class="grey-text text-lighten-3" href="index.htm#programme">Le programme</a></li>
+                <li><a class="grey-text text-lighten-3" href="bieres-bars-brasseries.html">Les 3 B</a></li>
+                <li><a href="#" class="waves-effect yellow darken-4 waves-light btn">JE RESERVE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © Copyright 2017 - Une Petite Mousse
+          <a class="grey-text text-lighten-4 right" href="#!">Mentions légales</a>
+          </div>
+        </div>
+      </footer>
+      
+
+    <!-- End of content-->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <!--For Devs Purpose-->
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $(".button-collapse").sideNav();
+        $('.parallax').parallax();
+        var winHeight = $(window).height();
+        $('.scrollspy').scrollSpy();
+        /*$('.brand-logo').css("background-color","#fff");*/
+        $('.parallax-container').css("height",winHeight);
+        $('.modal').modal();
+        $('.collapsible').collapsible();
+
+        $('#second-card').hide();
+        $('#third-card').hide();
+
+        $( "#collapsible-jeudi" ).click(function() {
+          $('#collapsible-vendredi').collapsible('close', 0);
+          $('#collapsible-samedi').collapsible('close', 0);
+        });
+
+        $( "#collapsible-vendredi" ).click(function() {
+          $('#collapsible-jeudi').collapsible('close', 0);
+          $('#collapsible-samedi').collapsible('close', 0);
+        });
+
+        $( "#collapsible-samedi" ).click(function() {
+          $('#collapsible-jeudi').collapsible('close', 0);
+          $('#collapsible-vendredi').collapsible('close', 0);
+        });
+       
+        $('.carousel.carousel-slider').carousel({fullWidth: true});
+        $('.carousel').css("height","425px");
+        $('#test').css("height","75%");
+
+        $('.zimmerman').click(function(){
+          $('.carousel').carousel('set', 0);
+          $('#brasseries').modal('close');
+        });
+
+        var options = [{selector: '.row', offset: 200}];
+          Materialize.scrollFire(options);
+
+      });
+
+      function moveBackward(){
+        $('.carousel').carousel('prev');
+      };
+
+      function moveForward(){
+        $('.carousel').carousel('next');
+      };
+
+
+    </script>
+  </body>
+</html>
