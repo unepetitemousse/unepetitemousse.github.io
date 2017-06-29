@@ -2,7 +2,7 @@
 <html>
   <head>
     <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="robots" content="noindex, nofollow">
     <meta charset="utf-8"></meta>
     <!--Import materialize.css-->
@@ -85,23 +85,31 @@
         cursor: pointer;
       }
 
+      #gbw-menu{
+        position: relative;
+      }
+
     </style>
   </head>
   <body>
     <!-- Content goes here-->
+      <ul id="gbw-menu" class="dropdown-content">
+        <li><a href="#programme" class="grey-text text-darken-2">Programme</a></li>
+        <li><a href="#bars-brasseries" class="grey-text text-darken-2">Bars &amp; Brasseries</a></li>
+        <li><a href="#infos-pratiques" class="grey-text text-darken-2">Infos pratiques</a></li>
+        <li class="divider"></li>
+        <li><a href="#concours-brassage-amateur" class="grey-text text-darken-2"><span class="emphase">Concours de Brassage Amateur</span></a></li>
+      </ul>
       <nav class="white valign-wrapper">
-        <div class="container">
+       <div class="container">
           <div class="nav-wrapper">
             <a href="#" class="brand-logo center"><img src="img/logo-grenoble-beer-week-2017-xs.png" height="100px"></a>
             <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="left hide-on-med-and-down grey-text">
               <li><a href="#qui-sommes-nous" class="grey-text text-darken-2">Qui Sommes Nous ?</a></li>
-              <li><a href="#programme" class="grey-text text-darken-2">Programme</a></li>
-              <li><a href="#bars-brasseries" class="grey-text text-darken-2">Bars &amp; Brasseries</a></li>
+              <li><a class="dropdown-button grey-text text-darken-2" href="#!" data-activates="gbw-menu">La Grenoble Beer Week<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#concours-brassage-amateur" class="grey-text text-darken-2"><span class="emphase">Concours de Brassage Amateur</span></a></li>
-              <li><a href="#infos-pratiques" class="grey-text text-darken-2">Infos pratiques</a></li>
               <li><a href="#" class="waves-effect yellow darken-4 waves-light btn pulse">JE RESERVE</a></li>
             </ul>
             <ul class="side-nav" id="mobile-nav">
@@ -114,7 +122,7 @@
                <li><a href="#" class="brand-logo"><img src="img/logo-grenoble-beer-week-2017-xs.png" height="100px"></a></li>
             </ul>
           </div>
-        </div>  
+        </div>
       </nav>
       <div class="parallax-container">
         <div class="parallax"><img src="img/grenoble-beer-week-illustration.jpg"></div>
@@ -528,10 +536,11 @@
               <h4>Contacts &amp; Tarifs</h4>
               <ul>
                 <li><strong>Tarifs : </strong>9€ l’entrée sur place, avec un verre de dégustation + 1 conso offerte</li>
-                <li><strong data-type="phone"><i class="tiny material-icons">phone</i> 0420880036</strong></li>
+                <li><strong data-type="phone"><i class="tiny material-icons">phone</i> 04 20 88 00 36</strong></li>
                 <li><strong><i class="tiny material-icons">email</i> grenoblebeerweek@unepetitemousse.fr</strong></li>
-                <li>&nbsp;</li>
+                
                 <li>Envie de vous investir ?</li>
+                <br>
               <a href="#" class="btn waves-light waves-effect grey darken-2">Je veux être bénévole</a>
             </div>
           </div>
@@ -548,16 +557,17 @@
               <h5 class="white-text">Grenoble Beer Week</h5>
               <p class="grey-text text-lighten-4">La première édition de la Grenoble Beer Week aura lieu du Jeudi 21 Septembre 2017 au Samedi 23 Septembre 2017.</p>
               <ul>
-                <li><i class="tiny material-icons">phone</i> Nous parler :  0420880036</li>
+                <li><i class="tiny material-icons">phone</i> Nous parler :  04 20 88 00 36</li>
                 <li><i class="tiny material-icons">email</i> Nous écrire : grenoblebeerweek@unepetitemousse.fr</li>
               </ul>
             </div>
             <div class="col l4 offset-l2 s12">
               <h5 class="white-text">Plan du Site</h5>
               <ul>
-                <li><a class="grey-text text-lighten-3" href="index.htm#qui-sommes-nous">Qui sommes nous ?</a></li>
-                <li><a class="grey-text text-lighten-3" href="index.htm#programme">Le programme</a></li>
-                <li><a class="grey-text text-lighten-3" href="bieres-bars-brasseries.html">Les 3 B</a></li>
+                <li><a class="grey-text text-lighten-3" href="#qui-sommes-nous">Qui sommes nous ?</a></li>
+                <li><a class="grey-text text-lighten-3" href="#programme">Programme</a></li>
+                <li><a class="grey-text text-lighten-3" href="#bars-brasseries">Bars, brasseries &amp; caves</a></li>
+                <li><a class="grey-text text-lighten-3" href="#concours-brassage-amateur">Concours de brassage Amateur</a></li>
                 <li><a href="#" class="waves-effect yellow darken-4 waves-light btn">JE RESERVE</a></li>
               </ul>
             </div>
@@ -566,7 +576,7 @@
         <div class="footer-copyright">
           <div class="container">
           © Copyright 2017 - Une Petite Mousse
-          <a class="grey-text text-lighten-4 right" href="#!">Mentions légales</a>
+          <a class="grey-text text-lighten-4 right" href="mentions-legales.html">Mentions légales</a>
           </div>
         </div>
       </footer>
@@ -615,6 +625,8 @@
           $('.carousel').carousel('set', 0);
           $('#brasseries').modal('close');
         });
+
+        $(".dropdown-button").dropdown();
 
         var options = [{selector: '.row', offset: 200}];
           Materialize.scrollFire(options);
