@@ -12,6 +12,7 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <style type="text/css">
       @font-face {
         font-family: 'bebaskai';
@@ -42,6 +43,10 @@
 
       .brand-logo{
         margin-top: 5px;
+      }
+
+      .btn{
+        font-weight: 600;
       }
 
       .button-collapse{
@@ -89,10 +94,26 @@
         position: relative;
       }
 
+      #tarifs{
+        font-size: 1.1em;
+      }
+
+      .instagram:hover{
+        color: #d81b60 !important;
+      }
+      .facebook:hover{
+        color: #3b5998 !important;
+      }
+
+      footer{
+        font-size: 0.95em;
+      }
+
     </style>
   </head>
   <body>
     <!-- Content goes here-->
+    <nav class="white valign-wrapper">
       <ul id="gbw-menu" class="dropdown-content">
         <li><a href="#programme" class="grey-text text-darken-2">Programme</a></li>
         <li><a href="#bars-brasseries" class="grey-text text-darken-2">Bars &amp; Brasseries</a></li>
@@ -100,7 +121,7 @@
         <li class="divider"></li>
         <li><a href="#concours-brassage-amateur" class="grey-text text-darken-2"><span class="emphase">Concours de Brassage Amateur</span></a></li>
       </ul>
-      <nav class="white valign-wrapper">
+      
        <div class="container">
           <div class="nav-wrapper">
             <a href="#" class="brand-logo center"><img src="img/logo-grenoble-beer-week-2017-xs.png" height="100px"></a>
@@ -124,8 +145,11 @@
           </div>
         </div>
       </nav>
-      <div class="parallax-container">
+      <div class="parallax-container hide-on-small-only">
         <div class="parallax"><img src="img/grenoble-beer-week-illustration.jpg"></div>
+      </div>
+      <div class="parallax-container hide-on-med-and-up">
+        <div class="parallax"><img src="img/grenoble-beer-week-illustration-mobile.jpg"></div>
       </div>
       <!--Start qui sommes nous-->
       <div class="container section">
@@ -274,11 +298,12 @@
         </div>-->
 
         <!--For MOBILE ONLY-->
+        <!--Uncomment bellow when breweries unveiled-->
+          <!--
         <div class="row hide-on-med-and-up">
           <h3>Les brasseries :</h3>
           <p>Encore un peu de patience, <span class="emphase">la liste des brasseries participantes vous sera bientôt révélée ;)</span></p>
-          <!--Uncomment bellow when breweries unveiled-->
-          <!--
+          
           <ul class="collapsible" data-collapsible="accordion">
              <li>
                <div class="collapsible-header">Brasserie du Dauphiné</div>
@@ -528,25 +553,79 @@
             <div class="card-panel grey darken-2 white-text scrollspy" id="concours-brassage-amateur">
               <h4>Concours de brassage Amateur</h4>
               <p>Tout grand brasseur a débuté chez lui, dans sa baignoire, avec ses recettes prototypes. La Grenoble Beer Week rend hommage aux brasseurs amateurs de tous horizons en leur proposant un concours, qui permettra aux gagnants de <span class="emphase">brasser leur recette dans une brasserie professionnelle et de créer la bière officielle de la Grenoble Beer Week #2 ! </span><br>Envie de participer ?</p>
-              <a href="https://unepetitemousse.fr/images/prod/ebook/GBW2017-reglement-brassage-amateur.pdf" class="btn waves-light waves-effect yellow darken-4">Je télécharge le règlement</a>
+              <a href="https://unepetitemousse.fr/images/prod/ebook/GBW2017-reglement-brassage-amateur.pdf" class="btn waves-light waves-effect yellow darken-4 hide-on-small-only">Je télécharge le règlement</a>
+              <a href="https://unepetitemousse.fr/images/prod/ebook/GBW2017-reglement-brassage-amateur.pdf" class="btn waves-light waves-effect yellow darken-4 hide-on-med-and-up"><i class="large material-icons left">play_for_work</i>Règlement</a>
             </div>
           </div>
           <div class="col m5">
             <div class="card-panel yellow darken-4 white-text">
-              <h4>Contacts &amp; Tarifs</h4>
+              <h4>Contacts organisation</h4>
               <ul>
-                <li><strong>Tarifs : </strong>9€ l’entrée sur place, avec un verre de dégustation + 1 conso offerte</li>
-                <li><strong data-type="phone"><i class="tiny material-icons">phone</i> 04 20 88 00 36</strong></li>
-                <li><strong><i class="tiny material-icons">email</i> grenoblebeerweek@unepetitemousse.fr</strong></li>
-                
-                <li>Envie de vous investir ?</li>
+                <li><strong data-type="phone"><i class="tiny material-icons left">phone</i> 04 20 88 00 36</strong></li>
+                <li><strong><i class="tiny material-icons left">email</i> grenoblebeerweek@unepetitemousse.fr</strong></li>
+              </ul>
+              <p><strong>Envie de vous investir dans l'organisation ?</strong> Ça tombe bien, nous recherchons des bénévoles ;)</p>
                 <br>
               <a href="#" class="btn waves-light waves-effect grey darken-2">Je veux être bénévole</a>
             </div>
           </div>
           
         </div>
-
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel white scrollspy" id="tarifs">
+              <h4 class="center-align emphase">Tarifs</h4>
+              <ul>
+                <li><strong class="emphase">Jusqu'au 31 Jullet 2017 :</strong> 5€ + 1 verre officiel offert + offre de parrainage (1 personne parrainée = 1 jeton = 1 conso)</li>
+                <li><strong class="emphase">Du 1<sup>er</sup> Août au 20 Septembre :</strong> 7€ + 1 verre officiel offert + 1 conso</li>
+                <li><strong class="emphase">Sur place :</strong> 9€ + 1 verre officiel offert + 1 conso</li>
+              </ul>
+              <p class="center-align">
+                <a href="#" class="btn yellow darken-4 waves-effect waves-light pulse">Je réserve</a>  
+              </p>
+              
+            </div>
+          
+          </div>
+        </div>
+        <!-- Start Social-->
+        <div class="row">
+          <div class="col s12">
+            <h2 class="yellow-text text-darken-4 center-align">Partagez l'évènement</h2>
+          </div>
+          <div class="col s6">
+            <div class="card-panel white grey-text text-darken-4 instagram">
+              <div class="row">
+                <div class="col s12 center-align">
+                  <i class="fa fa-instagram fa-5x" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 center-align">
+                  <h5>Instagram</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="card-panel white grey-text text-darken-4 facebook">
+              <div class="row">
+                <div class="col s12 center-align">
+                  <i class="fa fa-facebook fa-5x" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 center-align">
+                  <h5>Facebook</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        </div>
+        <!--End Social-->
         </div>
 
       </div>
@@ -630,6 +709,14 @@
 
         var options = [{selector: '.row', offset: 200}];
           Materialize.scrollFire(options);
+
+        $(".facebook").click(function(){
+          window.location = "https://www.facebook.com/events/105890736616982/";
+        });
+
+        $(".instagram").click(function(){
+          window.location = "https://www.instagram.com/gre.beer.week/";
+        });
 
       });
 
